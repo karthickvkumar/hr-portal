@@ -6,7 +6,7 @@ class SignupPage extends Component {
     return (
       <div>
         <h2>SignUp Page</h2>
-        <NavLink to="/login">Go back to Login page</NavLink>
+        <NavLink to="/">Go back to Login page</NavLink>
         <br></br>
         <NavLink to="/home">Go to Home page</NavLink>
       </div>
