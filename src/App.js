@@ -6,6 +6,8 @@ import SignupPage  from './pages/signup-page';
 import HomePage from './pages/home-page';
 import PageNotFound from './pages/page-not-found';
 
+import ProtectedRoute from './components/protected-route';
+
 import 'antd/dist/antd.css';
 
 class App extends Component {
@@ -17,7 +19,7 @@ class App extends Component {
           
           <Route path="/" exact component={LoginPage} ></Route>
           <Route path="/register" component={SignupPage}></Route>
-          <Route path="/home" component={HomePage}></Route>
+          <ProtectedRoute path="/home" component={HomePage}></ProtectedRoute>
 
           <Route component={PageNotFound}></Route>
 

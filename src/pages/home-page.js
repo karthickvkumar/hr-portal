@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Table, Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Api from '../services/api';
+import {withRouter} from 'react-router-dom'
 
 class HomePage extends Component {
 
@@ -90,4 +91,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default withRouter(HomePage);
